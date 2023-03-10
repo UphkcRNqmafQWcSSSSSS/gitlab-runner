@@ -1,0 +1,8 @@
+# vim ~/.bashrc
+# source ~/.bashrc
+
+# alias
+alias ..='cd ..'
+alias ...='cd ../..'
+alias cls='clear'
+alias gitlab-runner-web='docker exec -it gitlab-runner-web /bin/bash'

@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  gitlab-runner:
+    image: 'gitlab/gitlab-runner:${GITLAB_RUNNER_VERSION}'
+    container_name: '${GITLAB_RUNNER_CONTAINER_NAME}'
+    volumes:
+      - '${DOCKER_SOCK_FILE}:/var/run/docker.sock'
+      - '${GITLAB_RUNNER_CONFIG_DIR}:/etc/gitlab-runner'
+    restart: always

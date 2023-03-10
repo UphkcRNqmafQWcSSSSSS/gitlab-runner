@@ -1,0 +1,25 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.idea": true,
+    "**/.history": true,
+    "**/.DS_Store": true
+  },
+  "search.exclude": {
+    "**/logs": true,
+    "**/.git": true,
+    "**/.idea": true,
+    "**/.github": true,
+    "**/.vscode": true,
+    "**/yarn.lock": true
+  },
+  // updated 2022-12-21 10:06
+  // https://github.com/antfu/vscode-file-nesting-config
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    ".env": "*.env, .env.*, .envrc, env.d.ts",
+    "gitlab.rb": "gitlab.*.rb",
+    "docker-compose.yml": "docker-compose.*.yml",
+  }
+}
