@@ -16,4 +16,7 @@ gitlab-runner register \
     --executor "docker" \
     --docker-image "alpine:latest" \
     --description "前端部署runner"
+    
+# 注销 runner
+gitlab-runner unregister --name xxx
 ```
